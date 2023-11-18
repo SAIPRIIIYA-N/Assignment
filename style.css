@@ -1,0 +1,33 @@
+.clip {
+  --size:200px;
+  height:var(--size);
+  width:var(--size);
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
+
+.red{
+  background:red;
+}
+
+.blue{
+  background:blue;
+}
+
+.yellow{
+  background:yellow;
+}
+
+.green{
+  background:green;
+}
+
+.rotate{
+  height: calc(var(--size) * 1.5);
+  width: calc(var(--size) * 1.5);
+  display: grid;
+  position:relative;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  transform: translate(-50%, -50%)translate(calc(var(--size)*0.5),calc(var(--size)*0.5)) rotate(45deg);
+}
